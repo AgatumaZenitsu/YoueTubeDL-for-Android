@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="#FFF5F7"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨ YouTube to MP3 / MP4 ✨"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FF4081"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp" />
+
+    <EditText
+        android:id="@+id/urlInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:padding="15dp"
+        android:hint="YouTubeのURLを長押しで貼り付け"
+        android:textColorHint="#AAAAAA"
+        android:textColor="#333333"
+        android:inputType="textUri"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/downloadAudioButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="音源(MP3)を保存 🎵"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF4081"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/downloadVideoButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="動画(MP4)を保存 🎬"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF4081"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="準備完了"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:lineSpacingExtra="6dp" />
+
+    <VideoView
+        android:id="@+id/danceVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>
